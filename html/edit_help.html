@@ -1,0 +1,16 @@
+<div class="EditHelp">
+    <form method="post" action="/help_management.html" name="EditHelp<!--Data.HelpID-->">
+      <input type="hidden" name="todo" value="HelpManager.EditHelpPage" id="todo<!--Data.HelpID-->" />
+      <input type="hidden" name="Help.ID" value="<!--Data.HelpID-->" />
+      <input type="text" name="Help.Ordering" value="<!--Data.Ordering-->" style="width:30px;float:left;" />
+      <input type="text" name="Help.Name" value="<!--Data.Name-->" style="float:left;margin-left: 22px;" />
+      <input type="text" name="Help.Url" value="<!--Data.Url-->" style="margin-left: 22px;" /><br />
+      <textarea name="Help.ContentHTML" rows="5"><!--Data.ContentHTML--></textarea><br />
+      <input type="submit" value="Edit" />
+    </form>
+    <form method="post" action="/help_management.html" name="DeleteHelp<!--Data.HelpID-->">
+      <input type="hidden" name="todo" value="HelpManager.DeleteHelpPage" id="tododel<!--Data.HelpID-->" />
+      <input type="hidden" name="Help.ID" value="<!--Data.HelpID-->" />
+      <input type="submit" value="Delete" style="margin-left:50px;float:right;position:relative;top:-25px;" />
+    </form>
+</div>

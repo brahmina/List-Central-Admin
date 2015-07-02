@@ -1,0 +1,30 @@
+Cron Setup
+
+Backups
+5 1 * * * perl /home/www-data/admin.listcentral.me/cron/backup.sql lc_db
+15 1 * * * perl /home/www-data/admin.listcentral.me/cron/backup.sql lc_user_content
+
+Sitemap Generator
+25 1 * * * perl /home/www-data/admin.listcentral.me/cron/generate_google_site_map.pl
+
+Generate html tag cloud once and hour
+31 * * * * perl /home/www-data/admin.listcentral.me/cron/generate_html_tagcloud.pl
+
+Get Missing Amazon links Twice an hour
+19 * * * * perl /home/www-data/admin.listcentral.me/cron/get_inernational_amazon_links.pl
+49 * * * * perl /home/www-data/admin.listcentral.me/cron/get_inernational_amazon_links.pl
+
+Write Blog teaser
+5 2 * * * perl /home/www-data/admin.listcentral.me/cron/write_about_blog_teaser.pl
+
+Calculate stats - Every 5 minutes
+3 * * * * perl /home/www-data/admin.listcentral.me/cron/calculate_user_stats.pl
+8 * * * * perl /home/www-data/admin.listcentral.me/cron/calculate_user_stats.pl
+23 * * * * perl /home/www-data/admin.listcentral.me/cron/calculate_user_stats.pl
+28 * * * * perl /home/www-data/admin.listcentral.me/cron/calculate_user_stats.pl
+33 * * * * perl /home/www-data/admin.listcentral.me/cron/calculate_user_stats.pl
+38 * * * * perl /home/www-data/admin.listcentral.me/cron/calculate_user_stats.pl
+43 * * * * perl /home/www-data/admin.listcentral.me/cron/calculate_user_stats.pl
+48 * * * * perl /home/www-data/admin.listcentral.me/cron/calculate_user_stats.pl
+53 * * * * perl /home/www-data/admin.listcentral.me/cron/calculate_user_stats.pl
+58 * * * * perl /home/www-data/admin.listcentral.me/cron/calculate_user_stats.pl

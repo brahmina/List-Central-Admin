@@ -1,0 +1,62 @@
+
+<h2>Theme Management</h2><br />
+<div>
+    <link href="/css/mooRainbow.css" rel="stylesheet" type="text/css">
+    <script src="/js/mootools.js" type="text/javascript"></script>
+    <script src="/js/mooRainbow.js" type="text/javascript"></script>
+    <script language="JavaScript">
+        window.addEvent('domready', function() {
+            <!--ThemeManager.ColoursJS-->                        
+        });
+    </script>
+    <style>
+    <!--ThemeManager.ColourDivCSS-->
+    </style>                         
+    <div id="addtheme">
+    <form method="post">
+        <input type="hidden" name="todo" value="ThemeManager.AddNewTheme">
+        <label for="Name" id="themename">Theme Name:</label><input type="text" id="ThemeName" name="Theme.Name" style="width:150px;"  />
+        <br />
+        <!--ThemeManager.ColourDivs-->                                        
+         <p class="submit"><input type="submit" value="Create Theme" id="submit" /></p>
+    </form>
+    </div>
+</div>
+
+<h2>Available Themes</h2>
+<br />
+<div id="ThemeRegenerationButtons"> 
+    <form method="post">
+        <input type="hidden" name="todo" value="ThemeManager.RegenerateThemes">
+         <p><input type="submit" name="regenerate" value="Rebuild CSS"  /></p>
+    </form>
+</div>
+<!--<div id="MinifyCSS"> 
+    <form method="post">
+        <input type="hidden" name="todo" value="MinifyCSS">
+         <p><input type="submit" name="regenerate" value="Minify CSS"  /></p>
+    </form>
+</div>-->
+<div id="MinfyJS"> 
+    <form method="post">
+        <input type="hidden" name="todo" value="MinifyJS">
+         <p><input type="submit" name="regenerate" value="Minify JS"  /></p>
+    </form>
+</div>
+<div class="clear"></div>
+<div id="Themes">
+    <table class='ThemeColourTable'>
+        <tr><td class='ThemeColourHeader'><h3>ID</h3><br /></td>
+            <td class='ThemeColourHeader'><h3>Theme Name</h3><br /></td>
+            <td class='ThemeColourHeader'><h3>Background Colour</h3><br /></td>
+            <td class='ThemeColourHeader'><h3>Main Colour</h3><br /></td>
+            <td class='ThemeColourHeader'><h3>Accent Colour</h3><br /></td>
+            <td class='ThemeColourHeader'><h3>Secondary Accent Colour</h3><br /></td>
+            <td class='ThemeColourHeader'><h3>Tertiary  Accent Colour</h3><br /></td>
+            <td class='ThemeColourHeader'><h3>Enabled</h3><br /></td></tr>
+        <!--ThemeManager.AvailableThemes-->
+    </table>
+</div>
+<br /><br />
+
+

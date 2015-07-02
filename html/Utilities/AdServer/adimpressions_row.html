@@ -1,0 +1,34 @@
+<div class="AdImpressionsReportRow">
+    <b><!--Data.Advert_Name--> in 
+       <!--Data.AdSpace_Name--></b> - <a href="#" onclick="return:false" 
+                 onmouseover="javascript:showPopOver('Advert_<!--Data.Advert_ID-->')"
+                 onmouseout="hidePopOver('Advert_<!--Data.Advert_ID-->')">View</a><br /><br />
+    <div id="Advert_<!--Data.Advert_ID-->" class="popover" style="display:none">
+    <b>Preview:</b><br /><br />
+     <!--Data.Advert_Code-->
+    </div>
+
+    <form name="EnterEarningsAndClicks" method="post">
+        <input type="hidden" name="todo" value="EnterEarningsAndClicks" />
+    <table class="AdvertTable">
+        <tr><th>&nbsp;</th>
+            <th>Today</th>
+            <th>Yesterday</th>
+            <th><!--Data.2DaysAgo--></th>
+            <th><!--Data.3DaysAgo--></th>
+            <th><!--Data.4DaysAgo--></th>
+            <th><!--Data.5DaysAgo--></th>
+            <th><!--Data.6DaysAgo--></th>
+            <th><!--Data.7DaysAgo--></th></tr>
+        <!--Data.Impressions-->
+        <!--Data.Clicks-->
+        <!--Data.Conversion-->
+        <!--Data.Earnings-->
+        <tr><td colspan="9"><center>
+            <input type="submit" value="Update" />
+        </center>
+        </td></tr>
+    </table>
+    </form>
+    <br /><br />
+</div>

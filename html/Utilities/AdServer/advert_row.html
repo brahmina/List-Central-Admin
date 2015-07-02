@@ -1,0 +1,18 @@
+<form method='post'>
+<input type='hidden' name='todo' value='AdServer.EditAdvert'>
+<input type='hidden' name='Advert.ID' value='<!--Data.Advert_ID-->'>
+<tr><td><input type='text' name='Advert.Name' value='<!--Data.Advert_Name-->' /></td>
+ <td><input type='text' name='Advert.Source' value='<!--Data.Advert_Source-->' style="width:80px" /></td>
+ <td><input type='text' name='Advert.Dimensions' value='<!--Data.Advert_Dimensions-->' style="width:80px" /></td>
+ <td><select name='Advert.Enabled'><!--Data.Advert_EnabledOptions--></select></td>
+ <td><textarea name='Advert.Code'><!--Data.Advert_Code--></textarea></td>
+ <td>
+      <input type='image' src="/images/edit.gif" value='Edit' />
+  </form>
+    <br />
+    <form method='post' id="DeleteAdvert<!--Data.Advert_ID-->">
+    <input type='hidden' name='todo' value='AdServer.DeleteAdvert'>
+    <input type='hidden' name='Advert.ID' value='<!--Data.Advert_ID-->'>
+    <img src="/images/delete.png" value='Delete' style="margin: 0 10px;" onclick="submitDeleteAdvert(<!--Data.Advert_ID-->);" />
+    </form>
+</td></tr>

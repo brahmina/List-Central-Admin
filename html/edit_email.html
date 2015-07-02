@@ -1,0 +1,42 @@
+<div class="EditEmail">
+    <form method="get" action="/email_management.html" name="EditEmail<!--Data.EmailID-->">
+      <input type="hidden" name="todo" value="EmailManager.EditEmail" id="todo<!--Data.EmailID-->" />
+      <input type="hidden" name="Email.ID" value="<!--Data.EmailID-->" />
+
+      <input type="submit" value="Edit" class="EditEmailButton" />
+      <label>Subject</label><input type="text" name="Email.Subject" style="width: 600px;" value="<!--Data.Subject-->" /><br />
+      <label>HTML</label><textarea name="Email.HTML" class="AddEmailTextarea" style="float: left;" rows="5"><!--Data.HTML--></textarea>
+      <label>Text</label><textarea name="Email.Text" class="AddEmailTextarea" rows="5"><!--Data.Text--></textarea><br />
+    </form>
+    <div class="SendTo">
+        <form method="get" action="/email_management.html" name="SendEmailToList<!--Data.EmailID-->">
+          <input type="hidden" name="todo" value="EmailManager.SendEmailToList" id="todolist<!--Data.EmailID-->" />
+          <input type="hidden" name="Email.ID" value="<!--Data.EmailID-->" />
+          <label>Emails</label><input type="Text" name="Email.To" value="" style="width: 600px;" />
+          <input type="submit" value="Send To"  />
+          <div class="EmailToExplain">email1->name1,email2->name2...</div>
+        </form>
+    </div>
+    <div class="SendEmail">
+        <form method="get" action="/email_management.html" name="SendTestEmail<!--Data.EmailID-->">
+          <input type="hidden" name="todo" value="EmailManager.TestEmail" id="todosendtest<!--Data.EmailID-->" />
+          <input type="hidden" name="Email.ID" value="<!--Data.EmailID-->" />
+          <input type="submit" value="Test Email" />
+        </form>
+    </div>
+    <div class="SendEmail">
+        <form method="get" action="/email_management.html" name="SendEmail<!--Data.EmailID-->">
+          <input type="hidden" name="todo" value="EmailManager.SendEmail" id="todosend<!--Data.EmailID-->" />
+          <input type="hidden" name="Email.ID" value="<!--Data.EmailID-->" />
+          <input type="submit" value="Send Email" />
+        </form>
+    </div>
+    <div class="DeleteEmail">
+        <form method="get" action="/email_management.html" name="DeleteEmail<!--Data.EmailID-->">
+          <input type="hidden" name="todo" value="EmailManager.DeleteEmail" id="tododel<!--Data.EmailID-->" />
+          <input type="hidden" name="Email.ID" value="<!--Data.EmailID-->" />
+          <input type="submit" value="Delete" />
+        </form>
+    </div>
+    <div class="clear"></div>
+</div>

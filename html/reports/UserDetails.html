@@ -1,0 +1,71 @@
+<table class="StatsTable">
+    <tr>
+        <td class="StatsTableHeader" colspan="2">User Details</td>
+    </tr>
+    <tr>
+        <td class="StatsTableHeader">Username</td>
+        <td class="StatsTableData"><!--UserInfo.Username--></td>
+    </tr>
+    <tr>
+        <td class="StatsTableHeader">Joined On</td>
+        <td class="StatsTableData"><!--UserInfo.MemberSince--></td>
+        </td>
+    </tr>
+    <tr>
+        <td class="StatsTableHeader">Email</td>
+        <td class="StatsTableData"><!--UserInfo.Email--></td>
+    </tr>
+    
+    <tr>
+        <td class="StatsTableHeader">List Points Sum All Time</td>
+        <td class="StatsTableData"><!--UserInfo.ListPointsSum--></td>
+    </tr>  
+    <tr>
+        <td class="StatsTableHeader">Activity Score</td>
+        <td class="StatsTableData"><!--UserInfo.ActivityScore--></td>
+    </tr>
+    <tr>
+        <td class="StatsTableData" colspan="2">
+        <center>            
+            <a href="<!--UserInfo.ListsURL-->" target="_new">User's Lists</a> &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
+            <a href="javascript:openWindow('email_user.html?UserID=<!--UserInfo.ID-->', 'EmailUser', 'height=400,width=400,status=yes,toolbar=no');"" target="_new">Email</a> &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
+            <a href="/users.html?todo=BlockUser&UserID=<!--UserInfo.ID-->" target="_new">Block</a>
+            </center>
+        </td>
+    </tr>
+</table>
+<br /><br />
+<table class="StatsTable">
+    <tr>
+        <td class="StatsTableHeader">Activity Breakdown</td>
+        <td class="StatsTableHeader">This Week</td>
+        <td class="StatsTableHeader">This Year</td>
+    </tr>
+    <tr>
+        <td class="StatsTableHeader">List Count</td>
+        <td class="StatsTableData"><!--ActivityInfo_ListsCount_Week--></td>
+        <td class="StatsTableData"><!--ActivityInfo_ListsCount_Year--></td>
+    </tr>
+    <tr>
+        <td class="StatsTableHeader">Public List Items</td>
+        <td class="StatsTableData"><!--ActivityInfo_PublicListItemsCount_Week--></td>
+        <td class="StatsTableData"><!--ActivityInfo_PublicListItemsCount_Year--></td>
+        </td>
+    </tr>
+    <tr>
+        <td class="StatsTableHeader">Comments</td>
+        <td class="StatsTableData"><!--ActivityInfo_CommentCount_Week--></td>
+        <td class="StatsTableData"><!--ActivityInfo_CommentCount_Year--></td>
+    </tr>
+    
+    <tr>
+        <td class="StatsTableHeader">Feedback</td>
+        <td class="StatsTableData"><!--ActivityInfo_FeedbackSubmitted_Week--></td>
+        <td class="StatsTableData"><!--ActivityInfo_FeedbackSubmitted_Year--></td>
+    </tr>  
+    <tr>
+        <td class="StatsTableHeader">Logins</td>
+        <td class="StatsTableData"><!--ActivityInfo_Logins_Week--></td>
+        <td class="StatsTableData"><!--ActivityInfo_Logins_Year--></td>
+    </tr>
+</table>

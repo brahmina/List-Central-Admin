@@ -1,0 +1,761 @@
+html, body {
+        background-color:#ffffff;
+        font-family: Arial; 
+        font-size: 12px;
+         
+
+        color: #000000; 
+               
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        background: #FFF;
+        height:100%; 
+}
+.clear {
+        clear: both;
+        margin:0;
+        padding:0;
+}
+
+#header {
+        height: 100px;
+        background: #1D687A;
+}      
+#headerInner{
+        text-align: left;
+        width: 1004px;    
+}
+.AccentBar1 {
+        height: 4px;
+        background: #121D52;
+}
+.AccentBar2 {
+        height: 4px;
+        background: #BDEAFF;
+} 	
+#header img{
+        padding: 10px 0px;
+}
+#main{  
+        padding-top: 10px;
+        text-align: left;
+        width: 1004px;
+}
+#content{ 
+        margin-left: 160px;
+        padding-left: 20px;
+        min-height: 660px;
+}
+#footerTop{
+        height: 6px;            
+        background: #121D52;
+}
+#footerMiddle{
+        height: 3px;            
+        background: #BDEAFF;
+}
+#footer{
+        height: 20px;            
+        background: #1D687A;
+        text-align: left;
+}
+#footerInner{
+        width: 1004px;
+        color: #ffffff;
+        padding: 6px;
+}
+#footerInner a{
+        color: #ffffff; 
+        text-decoration: underline;
+}
+
+h1{
+        font-size: 18px;
+        font-weight: bold;
+}
+h2{
+        background:#1D687A none repeat scroll 0 0;
+        border-left:1em solid #121D52;
+        border-right:1em solid #BDEAFF;
+        color:#FFFFFF;
+        font-size:14px;
+        font-weight:bold;
+        margin-bottom:0;
+        padding:0.5em;
+}
+h3{
+        color: #121D52;
+        font-size:14px;
+        font-weight:bold;
+        margin-bottom: 10px;
+        
+}
+b {
+        font-size: 12px;
+        font-weight: bold;
+}
+p {
+        font-size: 12px;
+}
+
+.error {
+        color: #ff0000;
+}       
+.ThemeColourTable{
+        padding: 0;
+        margin: 0;
+        border: 2px solid #121D52;
+        border-collapse: collapse;
+        border-spacing: 0px;
+}
+.ThemeColourHeader{
+        padding: 0;
+        margin: 0;
+        border: 2px solid #121D52;
+        vertical-align: top;
+        text-align: center;
+        height: 4em;
+        width: 9em;
+}
+.ThemeColour{
+        padding: 0;
+        margin: 0;
+        vertical-align: top;
+        text-align: center;
+        height: 4em;
+        width: 9em;
+        border-bottom: 2px solid #121D52;
+}
+#Themes{
+        padding: 0;
+        padding-right: 2em;
+        margin: 0;
+        border: 0px solid #121D52;
+}
+#AddNewTheme{
+        padding: 0;
+        padding-right: 6em;
+        margin: 0;
+        border: 0px solid #121D52;
+        float: right;
+}
+
+.InvisibleTableTD {
+        vertical-align: top;
+        margin: 2em;
+        padding: 2em 2em 2em 0em;
+}
+
+.StatsTable { 
+        background-color: #fafafa;
+        border: 1px #121D52 solid;
+        border-collapse: collapse;
+        border-spacing: 0px; 
+        margin:10px;
+}
+
+.StatsTableData { 
+        border-bottom: 1px #121D52 solid;
+        border-right: 1px #121D52 solid;
+        text-align: center;
+        font-weight: normal;
+        color: #000000;
+        background-color: #fafafa;
+        margin: 0.5em;
+        padding: 0.5em;
+}
+
+.StatsTableHeader { 
+        background: #1D687A;
+        border: 1px #121D52 solid;
+        font-family: Verdana;
+        font-weight: bold;
+        color: #ffffff;
+        margin: 0.5em;
+        padding: 0.5em;
+}
+
+#navigation {
+        
+        float: left;
+}
+#navigation ul{
+        list-style-type: none;
+        font-size: 12px;
+        padding: 0px        
+}
+#navigation ul li{
+        background-color:#1D687A;
+        border-left:1em solid #121D52;
+        border-right:1em solid #BDEAFF;
+        border-top:1px solid #121D52;
+        color:#FFFFFF;
+        cursor:pointer;
+        display:block;
+        font-size:12px;
+        padding:0.3em 0.2em;
+        text-decoration:none;
+        width:auto;
+}
+#navigation ul li a{
+        text-decoration: none;
+        color: #ffffff;
+}
+#navigation ul li a:hover {
+        text-decoration: underline;
+        color: #ffffff;
+}
+a img {
+    border: 0px solid #000000;
+}
+
+/* Star Ratings */
+.RatingsDiv{
+        padding-left: 1em;
+}
+.RatingsText{
+        font-size: 10px;
+}
+
+.unit-rating{
+        list-style:none;
+        margin: 0px;
+        padding: 0px;
+        width: 75px;
+        height: 15px;
+        position: relative;
+        background: url('/images/1/star_rating2.gif') top left repeat-x;		
+}
+
+.unit-rating li{
+        padding:0px;
+        margin:0px;
+        /*\*/
+        float: left;
+        /* */
+}
+.unit-rating li a{
+        display:inline;
+        width: 15px;
+        height: 15px;
+        text-decoration: none;
+        z-index: 3;
+        position: absolute;
+        padding: 0px;
+}
+.unit-rating li a:hover{
+        background: url('/images/star_rating2.gif') left center;
+        z-index: 2;
+        left: 0px;
+}
+
+.unit-rating a.r1-unit{left: 0px;}
+.unit-rating a.r1-unit:hover{width: 15px;}
+
+.unit-rating a.r2-unit{left: 15px;}
+.unit-rating a.r2-unit:hover{width: 30px;}
+
+.unit-rating a.r3-unit{left: 30px;}
+.unit-rating a.r3-unit:hover{width: 45px;}
+
+.unit-rating a.r4-unit{left: 45px;}	
+.unit-rating a.r4-unit:hover{width: 60px;}
+
+.unit-rating a.r5-unit{left: 60px;}
+.unit-rating a.r5-unit:hover{width: 75px;}
+
+.unit-rating li.current-rating{
+        background: url('/images/star_rating2.gif') left bottom;
+        position: absolute;
+        height: 15px;
+        display: block;
+        z-index: 1;
+}	
+
+/* Forms */
+.FormDiv {
+        border-left: 1em solid #1d687a;
+        border-right: 1em solid #1d687a;
+        background-color: #ffffff;
+        border-top: 1em solid #121d52;
+        border-bottom: 1em solid #121d52;
+        color: #121d52;
+        display: block;
+        padding: 0.5em 0.5em 0.5em 0.5em;
+        width: 280px;
+        text-decoration: none;
+        margin: 1em;
+}
+
+input[type="text"], textarea, select {
+        font-size:12px;
+        margin:0 0 10px;
+        text-align:left;
+        border: 1px #121D52 solid;
+        width: 200px;
+}
+
+label {
+        display:block;
+        float:left;
+        margin:0 5px 0 10px;
+        color: #121d52;
+        text-align:right;    
+        width: 180px;
+        height: 20px;
+}
+
+form fieldset ol {
+        margin: 0;
+        padding: 0;
+}
+form fieldset li {
+        list-style: none;
+        padding: 5px;
+        margin: 0;
+}
+
+#login label {
+        width: 65px;
+}
+#login form {
+        width: 400px;
+}
+#login input[type="text"], #login textarea, #login select {
+        width: 200px;
+}
+#help input[type="text"], #help textarea, #help select {
+        width: 450px;
+}
+.EditHelp{
+        margin-bottom: 50px;
+        width: 582px;
+}
+.EditHelpOrdering{
+    width:30px;
+    float:left;
+}
+.EditHelpName{
+    float:left;
+    margin-left: 22px;
+}
+.EditHelpUrl{
+    margin-left: 22px;
+}
+.EditHelpDelete{
+    margin-left:50px;
+    float:right;
+    position:relative;
+    top: -30px;
+}
+#help label{
+        width: 60px;
+}
+#edithelp input[type="text"], #edithelp select {
+        width: 250px;
+}
+#edithelp textarea{
+        width: 580px;
+}
+#edithelp label{
+        width: 60px;
+}       
+#searchUsers{
+        float: right;
+}
+#searchUsers label {
+        width: auto;
+        margin: 0px;
+}
+#searchUsers form {
+        width: 160px;
+}
+#searchUsers input, #searchUsers textarea, #searchUsers select {
+        width: 150px;
+}
+#searchLists{
+        float: right;
+}
+#searchLists label {
+        width: auto;
+        margin: 0px;
+}
+#searchLists form {
+	left:25px;
+	margin:40px 0 0 10px;
+	position:relative;
+	width:140px;
+}
+#searchLists input, #searchLists textarea, #searchLists select {
+        width: 110px;
+}
+
+#FeedbackReply label {
+        width: 160px;
+}
+#FeedbackReply form {
+        width: 550px;
+}
+.FeedbackReplyTextarea {
+        width: 300px;
+}
+
+#addtheme label {
+        width: auto;
+}
+#addtheme label#themename {
+        width: auto;
+        color: #121D52;
+        font-size:12px;
+        font-weight:bold;
+}
+#addtheme form {
+        width: 820px;
+        margin: 0px
+}
+#addtheme input[type="text"], #addtheme textarea, #addtheme select {
+        width: 60px;
+}
+#ThemeName{
+        width: 150px;
+}
+.rainbow{
+        margin: 0px 5px 0px 0px
+}
+
+#Adverts {
+        width: 300px;
+        margin-right: 20px;
+}
+
+#Adverts input[type="text"] {
+        width: 200px;
+}
+
+input[type="button"], input[type="submit"] {
+        background: url(/images/Button.png) no-repeat;
+        height: 24px;
+        color: #ffffff;
+        border: 0px;
+        width:110px;
+}
+
+.AdvertTable { 
+        background-color: #fafafa;
+        border: 1px #121D52 solid;
+        border-collapse: collapse;
+        border-spacing: 0px; 
+}
+
+.AdvertTable td { 
+        border-bottom: 1px #121D52 solid;
+        border-right: 1px #121D52 solid;
+        font-weight: normal;
+        color: #000000;
+        background-color: #fafafa;
+        margin: 0.5em;
+        padding: 0.5em;
+        text-align: center;
+}
+
+.AdvertTable th { 
+        background: #1D687A;
+        border: 1px #121D52 solid;
+        font-family: Verdana;
+        font-weight: bold;
+        color: #ffffff;
+        margin: 0.5em;
+        padding: 0.5em;
+}
+
+#Advert label {
+        width: 50px;
+}
+#Advert textarea {
+        width: 200px;
+}
+#AvailableAdverts input[type="text"]  {
+        width: 120px;
+}
+#AvailableAdverts select  {
+        width: 75px;
+}
+.popover {
+        border: #121d52 1px solid; 
+        padding: 10px;
+        background:white;        
+
+        width: auto;
+        height: auto;
+        position: fixed;
+        top: 50px;
+        left: 300px;
+}
+
+.ViewButton{
+        margin: 3px 3px 3px -3px;
+}
+
+#CreateAdvertDiv{
+        width: 550px
+}
+#AdSpaces select {
+        width: 200px;
+}
+#CreatAdvertButton{
+        margin-left:34px;
+        margin-top:16px;
+}
+
+#ThemeRegenerationButtons{
+        float: left;     
+        margin-right: 50px;  
+}
+#MinifyCSS{
+        float: left;
+        margin-right: 50px;       
+}
+.ThemeEnabling{
+        text-align: center;
+        border: 2px solid #121D52;
+}
+
+#AvailableAdverts input[type="button"], #AvailableAdverts input[type="submit"] {
+        background: url(/images/Button.png) no-repeat;
+        height: 24px;
+        color: #ffffff;
+        border: 0px;
+        width:110px;
+        margin-left:0;
+}
+
+.AdServerFormContainer{
+        background: white none repeat scroll 0%;
+        border: 0px solid #1D687A;
+        padding: 0em 0em 0em 3em;
+}
+
+.AdServerFormLinks{
+        bottom:19px;
+        position:relative;
+        left: 45px;
+        width: 520px;
+}
+.AdServerFormLinks li{
+        float:left;
+        height:25px;
+        list-style-type:none;
+        margin-top:1px;
+        padding-top:5px;
+        text-align:center;
+        width:116px;
+}
+#AdServerFormContainer div.FormDiv {
+        width: 780px;
+}
+
+#AvailableAdvertsTab textarea {
+        width:140px;
+}
+
+#AdPlacementTab select {
+        width:200px;
+}
+#CreateAdvertForm{
+        width: 420px;
+        margin-right:300px;
+}
+#CreateAdvertForm textarea {
+        width: 200px;
+}
+
+#AdImpressionsReportsTab input[type="text"] {
+        width: 70px;
+}
+
+.SettingsFormContainer {
+        background: white none repeat scroll 0%;
+        border: 0px solid #1d687a;
+        padding: 0em 0em 0em 3em;
+}
+#SettingsFormContainer ul.tabLinks {
+        position:relative;
+        bottom:19px;     
+}
+#SettingsTabWindow {
+	height: 390px;
+}
+
+.tabTop{
+    background: url(/images/tabsTopLeft.png) no-repeat left top; 
+    width: 687px;
+    height: auto;
+    min-height: 30em;
+    margin-bottom: 20px;
+}
+.tabLetters{
+        float:left;
+        font-size:18px;
+        font-weight:bold;
+        left:15px;
+        position:relative;
+        text-transform:lowercase;
+        top:-58px;
+        width:200px;
+}
+#AdServerFormContainer{
+        position: relative;
+        top: 30px;
+}
+/* If IE 6 -> left: 0; */
+.tabMiddle{
+    background:  url(/images/tabsMiddle.png) repeat-y center;
+    left:1px;
+    position:relative;
+    top: 16px;
+    min-height: 10em;
+}
+.tabBottom{
+    background:  url(/images/tabsBottom.png) no-repeat scroll 0 0;
+    height:40px;
+    margin-left:1px;
+    width:688px;
+    margin-top:-10px;
+}
+
+.tabLinks{
+        left:315px;
+        list-style-type:none;
+        margin:0;
+        position:absolute;
+        top:-17px;
+}
+.tabLinks li{
+        width: 83px;
+        height: 23px;
+        text-align: center;
+        padding-top: 5px;
+        float: left;
+}
+.tabLinks li a, .tabLinks li a:hover{
+    height:23px;
+    padding-top:5px;
+    font-weight: normal;
+    width:83px;
+    display:block;
+}
+.tabs a{
+    background: url(/images/tabsRest.png) no-repeat;
+    color: #ffffff;   
+}
+.tabs a:hover{
+    background: url(/images/tabsRestOn.png) no-repeat;
+    color: #121d52;
+}
+.tabsOn a{
+    background: url(/images/tabsRestOn.png) no-repeat;
+    color: #121d52; 
+}
+.tabsOn a:hover{
+    background: url(/images/tabsRestOn.png) no-repeat;
+    color: #121d52;
+}
+
+.tabsFirst a{
+    background: url(/images/tabsFirst.png) no-repeat;
+    color: #ffffff;
+}
+.tabsFirst a:hover{
+    background: url(/images/tabsFirstOn.png) no-repeat;
+    color: #121d52;
+}
+.tabsFirstOn a{
+    background: url(/images/tabsFirstOn.png) no-repeat;
+    color: #121d52;
+}
+.tabsFirstOn a:hover{
+    background: url(/images/tabsFirstOn.png) no-repeat;
+    color: #121d52;
+}
+.tabsLast a{
+    background: url(/images/tabsLast.png) no-repeat;
+    color: #ffffff;
+}
+.tabsLast a:hover{
+    background: url(/images/tabsLastOn.png) no-repeat;
+    color: #121d52;
+}
+.tabsLastOn a{
+    background: url(/images/tabsLastOn.png) no-repeat;
+    color: #121d52;
+}
+.tabsLastOn a:hover{
+    background: url(/images/tabsLastOn.png) no-repeat;
+    color: #121d52;
+}
+.tabsSingle a{
+    background: url(/images/tabsSingle.png) no-repeat;
+    color: #121d52;
+}
+.tabsSingleOn a:hover{
+    background: url(/images/tabsSingle.png) no-repeat;
+    color: #121d52;
+}
+
+.AdvertIcon{
+        float: left;
+}
+
+#AvailableAdvertsTab{
+        margin-top: -95px;
+}
+#AddAdvertTab{
+        margin-top: -95px;
+}
+#AdPlacementTab{
+        margin-top: -95px;
+}
+#AdImpressionsReportsTab{
+        margin-top: -95px;
+}
+
+.AddEmailTextarea{
+    width: 325px;
+}
+#AddEmail{
+    margin-bottom: 50px;
+}
+#Email label{
+    width: 60px;
+}
+.SendEmail{
+    float: left;
+    margin-left: 75px;
+    margin-right: 15px;
+}
+.EditEmailButton{
+    float:right;
+    margin-right: 20px;
+    position: relative;
+    top: -3px;
+}
+.DeleteEmail{
+    margin-left: 60px;
+    float: left;
+}
+.EmailTo{
+    float: left;
+    width: 600px;
+}
+.SendTo{
+    margin-top: 15px;
+}
+.EmailToExplain{
+    margin-left: 75px;
+    position: relative;
+    top: -3px;
+}
+.EmailCreate{
+        margin-left: 75px;
+}

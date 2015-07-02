@@ -1,0 +1,23 @@
+<table class="StatsTable">
+    <tr>
+        <td class="StatsTableHeader">Username</td>        
+        <td class="StatsTableHeader">Activity Score</td>
+        <td class="StatsTableHeader">Popularity Score</td>
+        <td class="StatsTableHeader">User's Lists</td>
+        <td class="StatsTableHeader">Email</td>
+        <td class="StatsTableHeader">Block User</td>
+        <td class="StatsTableHeader">Joined On</td>
+    </tr>
+    <!--SearchResultsRows-->
+</table>
+<br /><br />
+<div id="SearchUsers" style="width: 400px;">
+    <form name="SearchUsers" method="post" action="<!--SETUP.ADMIN_URL-->">
+        <fieldset class="SeachFieldset">
+        <legend>Seach Users</legend>
+        <input type="hidden" name="todo" value="SearchUsers" />
+        <div><input type="text" name="Query" value="" class="HomePageInput" /></div>
+        <input type="submit" name="submit" value="Search" class="HomePageButton" id="SearchUsersButton" />
+        </fieldset>
+    </form>
+</div>

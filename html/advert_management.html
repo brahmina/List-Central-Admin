@@ -1,0 +1,85 @@
+<h2>List Central Ad Server</h2><br />
+<div id="AdServerFormContainer">
+    <div class="tabTop">
+        <ul class="tabLinks">
+            <li class="tabsFirst<!--NavOnAdServerTab.AvailableAdvertsTab-->" id="AdServerNavLI_AvailableAdvertsTab"><a href="javascript:switchAdServerTab('AvailableAdvertsTab')">adverts</a></li> 
+            <li class="tabs<!--NavOnAdServerTab.AddAdvertTab-->" id="AdServerNavLI_AddAdvertTab"><a href="javascript:switchAdServerTab('AddAdvertTab')">create</a></li> 
+            <li class="tabs<!--NavOnAdServerTab.AdPlacementTab-->" id="AdServerNavLI_AdPlacementTab"><a href="javascript:switchAdServerTab('AdPlacementTab')">placement</a></li>  
+            <li class="tabsLast<!--NavOnAdServerTab.AdImpressionsReportsTab-->" id="AdServerNavLI_AdImpressionsReportsTab"><a href="javascript:switchAdServerTab('AdImpressionsReportsTab')">impressions</a></li> 
+        </ul> 
+        <div class="tabMiddle" id="AdServerTabWindow">
+           <div class="clear"></div>
+ 
+<!------------------------------------------------>
+
+        <div id="AvailableAdvertsTab" style="<!--DisplayAdServerTab.AvailableAdvertsTab-->">
+            <center>
+            <b>Available Adverts:</b><br /><br />
+    	     <table class="AdvertTable" id="AvailableAdverts">
+                <tr><th>Name</th>
+                     <th>Source</th>
+                     <th>Dimensions</th>
+                     <th>Enabled</th>
+                     <th>Code</th>
+                     <th>Do</th></tr>
+                <!--AdServer.getAvailableAdverts-->
+            </table> 	
+            </center>
+        </div> 
+
+
+        <div id="AddAdvertTab" style="<!--DisplayAdServerTab.AddAdvertTab-->">
+            <center>
+            <form method="post" id="CreateAdvertForm">
+                <b>Create New Advert</b><br /><br />
+                <input type="hidden" name="todo" value="AdServer.AddAdvert">
+                <label for="Name" id="advertname">Name:</label><input type="text" id="Name" name="Advert.Name"  /><br />
+                <label for="Source" id="advertname">Source:</label><input type="text" id="Source" name="Advert.Source"  /><br />
+                <label for="Width" id="advertwidth">Width:</label><input type="text" id="Width" name="Advert.Width"  /><br />
+                <label for="Height" id="advertheight">Height:</label><input type="text" id="Height" name="Advert.Height"  /><br />
+                <label for="Code" id="advertname">Code:</label><textarea id="Code" name="Advert.Code"></textarea><br />
+                <p class="submit"><input type="submit" value="Create Advert"  id="CreatAdvertButton" /></p>
+            </form>
+            </center>
+        </div>
+
+
+        <div id="AdPlacementTab" style="<!--DisplayAdServerTab.AdPlacementTab-->">
+    		<center>      
+            <b>Place adverts in the ad spaces on List Central:</b><br /><br />
+    		<table class="AdvertTable">
+            <form method="post" id="PlaceAdvertForm">
+                <input type="hidden" name="todo" value="AdServer.PlaceAdvert">
+             <tr><th>ID</th>
+             <th>Name</th>
+             <th>Dimensions</th>
+             <!--<th>Rating</th>-->
+             <th>Advert Placed</th></tr>
+            <!--AdServer.getAdvertSpaces-->
+            <tr><td colspan="4">
+                 <center><input type="submit" value="Place Advert" id="submit" /></center>
+            </td></tr></table>
+            </form>    
+            </center>
+    	</div>
+
+
+        <div id="AdImpressionsReportsTab" style="<!--DisplayAdServerTab.AdImpressionsReportsTab-->">
+    		<center>
+            
+            <b>Ad Impressions Reporting</b><br /><br />
+            <p>Disabled</p>
+            <!--<!AdServer.getAdImpressionsReport>-->
+            </center>
+    	</div>
+
+<!------------------------------------------------>
+
+        </div> <!-- tabMiddle-->
+    <div class="tabBottom"></div>
+    </div><!-- tabTop -->
+</div>
+<br /><br />
+
+
+

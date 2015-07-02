@@ -1,0 +1,19 @@
+<h2>Email Management</h2><br />
+<!--ErrorMessages-->
+<div id="Email">
+    <div id="AddEmail">
+    <form method="get" name="AddNewEmail" action="/email_management.html" />
+        <input type="hidden" name="todo" value="EmailManager.AddNewEmail" />
+        <label>Subject</label><input type="text" name="Email.Subject" style="width: 728px;" /><br />
+        <label>HTML</label><textarea name="Email.HTML" class="AddEmailTextarea" style="float: left;" rows="10"></textarea>
+        <label>Text</label><textarea name="Email.Text" class="AddEmailTextarea" rows="10"></textarea><br />
+        <input type="submit" value="Create" class="EmailCreate" />
+    </form>
+    </div>
+    <div id="Emails">
+        <!--EmailManager.GetEmailListingsAdmin-->
+    </div>
+</div>
+<br /><br />
+
+

@@ -1,0 +1,31 @@
+<h2>List Search Results: "<!--CGI.Query-->"</h2><br />
+
+<table class="StatsTable">
+    <tr>
+        <td class="StatsTableHeader">ID</td>        
+        <td class="StatsTableHeader">List Name</td>
+        <td class="StatsTableHeader">List Items</td>
+        <td class="StatsTableHeader">User</td> 
+        <td class="StatsTableHeader">List Group</td>
+        <td class="StatsTableHeader">Points 24 Hours</td>
+        <td class="StatsTableHeader">Points All Time</td>
+        <td class="StatsTableHeader">Hits OnSite</td>
+        <td class="StatsTableHeader">Hits OffSite</td>
+        <td class="StatsTableHeader">Total Hits</td>
+        <td class="StatsTableHeader">ListComments</td>
+        <td class="StatsTableHeader">List Rating</td>
+        <td class="StatsTableHeader">Delete List</td>
+    </tr>
+    <!--SearchResultsRows-->
+</table>
+<br /><br />
+<div id="SearchLists" style="width: 400px;">
+    <form name="SearchLists" method="post" action="<!--SETUP.ADMIN_URL-->">
+        <fieldset class="SeachFieldset">
+        <legend>Seach Lists</legend>
+        <input type="hidden" name="todo" value="SearchLists" />
+        <div><input type="text" name="Query" value="" class="HomePageInput" /></div>
+        <input type="submit" name="submit" value="Search" class="HomePageButton" id="SearchListsButton" />
+        </fieldset>
+    </form>
+</div>

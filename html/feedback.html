@@ -1,0 +1,52 @@
+<h2>Feedback Details</h2><br />
+<!--FeedbackManager.FeedbackRequest-->
+
+<br />
+<b>Feedback Replies</b>
+<table class="StatsTable">
+    <tr>
+        <td class="StatsTableHeader">ID</td>
+        <td class="StatsTableHeader">Admin User</td>
+        <td class="StatsTableHeader">Date</td>
+        <td class="StatsTableHeader">Reply</td>
+        <td class="StatsTableHeader">Note</td>
+    </tr>
+    <!--FeedbackManager.FeedbackReplies-->
+</table>
+<br />
+<script type="text/javascript">
+function doInfraction(value){
+
+    if(value == 1){
+       document.getElementById("Infraction").style.display = "";
+    }else{
+        document.getElementById("Infraction").style.display = "none";
+    }
+}
+
+</script>
+<!--ErrorMessages-->
+<div id="FeedbackReply">
+    <form name="FeedbackReply" method="post" >
+        <fieldset>
+            <legend>Send Feedback Reply</legend>
+            <input type="hidden" name="todo" value="AddFeedbackReply" />
+            <input type="hidden" name="FeedbackReply.FeedbackID" value="<!--CGI.FeedbackID-->" />
+            <label>Reply</label><textarea name="FeedbackReply.Reply" class="FeedbackReplyTextarea"></textarea><br />
+            <label>Note</label><textarea name="FeedbackReply.Note" class="FeedbackReplyTextarea"></textarea><br />
+            <label>Feedback Status</label><!--Input.Select.FeedbackStatus.ID.Name.FeedbackStatusID--><br />
+            <label>Valid Complaint</label>
+            <select name="ValidComplaint" onchange="javascript:doInfraction(this.options[this.selectedIndex].value)">
+                <option value="">Select</option>    
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select><br />
+            <div id="Infraction" style="display:none">
+                <label>Infraction</label><!--Input.Select.Infraction.ID.Name.InfractionID--><br />
+            </div>
+            <label>Problematic User</label><!--Feedback.ProblematicUser--><br /><br />
+            <label>Problematic List</label><!--Feedback.ProblematicList--><br /><br />
+            <input type="submit" name="submit" id="submit" value="Send" />
+        </fieldset>
+    </form>
+</div>
